@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class QuizActivity extends Activity {
 
@@ -26,7 +27,8 @@ public class QuizActivity extends Activity {
         mTrueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            // Does nothing yet, but soon!
+                Toast.makeText(QuizActivity.this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -36,7 +38,7 @@ public class QuizActivity extends Activity {
         mFalseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            // Does nothing yet, but soon!
+                Toast.makeText(QuizActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
             }
         });
 
