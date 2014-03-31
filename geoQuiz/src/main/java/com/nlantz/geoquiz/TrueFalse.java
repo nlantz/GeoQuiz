@@ -3,6 +3,8 @@ package com.nlantz.geoquiz;
 /**
  * Created by nick on 3/29/14.
  */
+
+
 public class TrueFalse {
 
     private boolean mTrueQuestion;
